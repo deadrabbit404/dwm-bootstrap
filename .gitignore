@@ -1,0 +1,9 @@
+dmenu/dmenu
+dwm/dwm
+slstatus/slstatus
+*.o
+*.orig
+*.rej
+*.gz
+*.swp
+*.bak
