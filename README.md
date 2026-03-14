@@ -8,7 +8,7 @@ Minimal dwm bootstrap for base Linux installations
 
 ## Config Defaults
 - Terminal: Alacritty
-- Font: IosevkaTerm Nerd Font
+- Font: VictorMono Nerd Font
 
 ## Patches
 
@@ -34,7 +34,7 @@ alpha, center, grid, gridnav
 - xinit
 - xauth
 - xf86-input-libinput
-- At least one installed font (the provided config uses IosevkaTerm Nerd Font)
+- At least one installed font (the provided config uses VictorMono Nerd Font)
 
 ### Optional (GPU acceleration)
 - mesa-dri (required for Alacritty)
@@ -59,5 +59,5 @@ exec dbus-run-session -- dwm
 
 ## Notes
 - This repo is intended for minimal, curated setups
-- The default terminal and font are configurable, but Alacritty + Iosevka Term Nerd Font is used in the provided configs.
+- The default terminal and font are configurable, but Alacritty + VictorMono Nerd Font is used in the provided configs.
 - Only listed patches are applied for dwm and dmenu. Additional patches can be applied manually.
