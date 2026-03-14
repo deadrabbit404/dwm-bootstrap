@@ -36,8 +36,9 @@ alpha, center, grid, gridnav
 - xf86-input-libinput
 - At least one installed font (the provided config uses VictorMono Nerd Font)
 
-### Optional (GPU acceleration)
+### Optional
 - mesa-dri (required for Alacritty)
+- pamixer (required for volume script on slstatus)
 
 ## Installation
 Clone the repository and run the installer:
