@@ -13,10 +13,10 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "VictorMono Nerd Font Propo:size=12" };
 static const char dmenufont[]       = "VictorMono Nerd Font Propo:size=16";
 static const char col_gray1[]       = "#11111b";
-static const char col_gray2[]       = "#45475a";
-static const char col_gray3[]       = "#bac2de";
-static const char col_gray4[]       = "#cdd6f4";
-static const char col_cyan[]        = "#f9e2af";
+static const char col_gray2[]       = "#414868";
+static const char col_gray3[]       = "#a9b1d6";
+static const char col_gray4[]       = "#c0caf5";
+static const char col_cyan[]        = "#f7768e";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },
