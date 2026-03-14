@@ -1,6 +1,7 @@
 dmenu/dmenu
 dwm/dwm
 slstatus/slstatus
+*/config.h
 *.o
 *.orig
 *.rej
