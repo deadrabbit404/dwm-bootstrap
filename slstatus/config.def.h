@@ -66,12 +66,8 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-		{ run_command, " %s ",         "volume.sh" },
-    { disk_free, "  %sB ",        "/"},
-    { cpu_perc, "  %s%% ",        NULL },
-    { ram_used, "  %sB ",         NULL },
-    { netspeed_rx, "  %sB ",      "wlp2s0" },
-    { run_command, " %s ",         "network.sh" },
-    { datetime, " %s ",             "%a %b %d %H:%M" },
-    { run_command, " %s",          "battery.sh" },
+    { run_command, " %s ",        "volume.sh" },
+    { datetime, "  %s ",         "%a %b %d %H:%M" },
+    { run_command, " %s ",        "network.sh" },
+    { run_command, " %s",         "battey.sh" },
 };
