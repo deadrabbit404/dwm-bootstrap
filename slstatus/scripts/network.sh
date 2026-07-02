@@ -1,16 +1,28 @@
-#!/bin/bash
+#!/bin/sh
 
-wired=`ip a | grep 'enp\|eth0' | grep inet | wc -l`
-wifi=`ip a | grep 'wlp\|wlan' | grep inet | wc -l`
+wired=0
+wifi=0
 
-network() {
-	if [[ $wired = 1 ]]; then
-		echo "󰈀"
-	elif [[ $wifi = 1 ]]; then
-		echo "󰖩"
-	else
-		echo "󱚼"
-	fi
-}
+for iface in /sys/class/net/*; do
+  read state <"$iface/operstate"
+  [ "$state" = "up" ] || continue
 
-echo "$(network)"
+  name=$(basename "$iface")
+
+  case "$name" in
+  wl*)
+    wifi=1
+    ;;
+  en* | eth*)
+    wired=1
+    ;;
+  esac
+done
+
+if [ "$wired" -eq 1 ]; then
+  echo "󰌘"
+elif [ "$wifi" -eq 1 ]; then
+  echo "󰖩"
+else
+  echo "󰌙"
+fi
